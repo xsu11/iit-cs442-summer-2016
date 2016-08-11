@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A55DD981D26D053008BCE37 /* Crime+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A55DD8C1D26D053008BCE37 /* Crime+CoreDataProperties.swift */; };
+		6A55DD991D26D053008BCE37 /* Crime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A55DD8D1D26D053008BCE37 /* Crime.swift */; };
+		6A55DD9A1D26D053008BCE37 /* CrimeLoc+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A55DD8E1D26D053008BCE37 /* CrimeLoc+CoreDataProperties.swift */; };
+		6A55DD9B1D26D053008BCE37 /* CrimeLoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A55DD8F1D26D053008BCE37 /* CrimeLoc.swift */; };
+		6A55DD9C1D26D053008BCE37 /* CommAreaGeo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A55DD901D26D053008BCE37 /* CommAreaGeo+CoreDataProperties.swift */; };
+		6A55DD9D1D26D053008BCE37 /* CommAreaGeo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A55DD911D26D053008BCE37 /* CommAreaGeo.swift */; };
+		6A55DD9E1D26D053008BCE37 /* IUCR+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A55DD921D26D053008BCE37 /* IUCR+CoreDataProperties.swift */; };
+		6A55DD9F1D26D053008BCE37 /* IUCR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A55DD931D26D053008BCE37 /* IUCR.swift */; };
+		6A55DDA01D26D053008BCE37 /* CommArea+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A55DD941D26D053008BCE37 /* CommArea+CoreDataProperties.swift */; };
+		6A55DDA11D26D053008BCE37 /* CommArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A55DD951D26D053008BCE37 /* CommArea.swift */; };
+		6A55DDA21D26D053008BCE37 /* FBICode+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A55DD961D26D053008BCE37 /* FBICode+CoreDataProperties.swift */; };
+		6A55DDA31D26D053008BCE37 /* FBICode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A55DD971D26D053008BCE37 /* FBICode.swift */; };
+		6A55DDA51D28A3C5008BCE37 /* DetailMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A55DDA41D28A3C5008BCE37 /* DetailMapViewController.swift */; };
+		6A55DDAA1D28A3D8008BCE37 /* FilterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A55DDA61D28A3D8008BCE37 /* FilterData.swift */; };
+		6A55DDAB1D28A3D8008BCE37 /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A55DDA71D28A3D8008BCE37 /* FilterTableViewCell.swift */; };
+		6A55DDAC1D28A3D8008BCE37 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A55DDA81D28A3D8008BCE37 /* FirstViewController.swift */; };
+		6A55DDAD1D28A3D8008BCE37 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A55DDA91D28A3D8008BCE37 /* TabBarViewController.swift */; };
+		6A55DDAF1D2991B3008BCE37 /* initialSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A55DDAE1D2991B3008BCE37 /* initialSettings.plist */; };
+		6A84529F1D1B35B3006540EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A84529E1D1B35B3006540EA /* AppDelegate.swift */; };
+		6A8452A21D1B35B3006540EA /* CrimeDataInChicago.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A8452A01D1B35B3006540EA /* CrimeDataInChicago.xcdatamodeld */; };
+		6A8452A41D1B35B3006540EA /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8452A31D1B35B3006540EA /* MasterTableViewController.swift */; };
+		6A8452A61D1B35B3006540EA /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8452A51D1B35B3006540EA /* DetailTableViewController.swift */; };
+		6A8452A91D1B35B3006540EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A8452A71D1B35B3006540EA /* Main.storyboard */; };
+		6A8452AB1D1B35B3006540EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A8452AA1D1B35B3006540EA /* Assets.xcassets */; };
+		6A8452AE1D1B35B3006540EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A8452AC1D1B35B3006540EA /* LaunchScreen.storyboard */; };
+		6ABF533C1D2087CC00D40F16 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ABF533A1D2087CC00D40F16 /* libsqlite3.0.tbd */; };
+		6ABF533D1D2087CC00D40F16 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ABF533B1D2087CC00D40F16 /* libsqlite3.tbd */; };
+		6ABF533F1D20885D00D40F16 /* SQLiteDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABF533E1D20885D00D40F16 /* SQLiteDBManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6A55DD8C1D26D053008BCE37 /* Crime+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Crime+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6A55DD8D1D26D053008BCE37 /* Crime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crime.swift; sourceTree = "<group>"; };
+		6A55DD8E1D26D053008BCE37 /* CrimeLoc+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CrimeLoc+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6A55DD8F1D26D053008BCE37 /* CrimeLoc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrimeLoc.swift; sourceTree = "<group>"; };
+		6A55DD901D26D053008BCE37 /* CommAreaGeo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CommAreaGeo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6A55DD911D26D053008BCE37 /* CommAreaGeo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommAreaGeo.swift; sourceTree = "<group>"; };
+		6A55DD921D26D053008BCE37 /* IUCR+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IUCR+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6A55DD931D26D053008BCE37 /* IUCR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IUCR.swift; sourceTree = "<group>"; };
+		6A55DD941D26D053008BCE37 /* CommArea+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CommArea+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6A55DD951D26D053008BCE37 /* CommArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommArea.swift; sourceTree = "<group>"; };
+		6A55DD961D26D053008BCE37 /* FBICode+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FBICode+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6A55DD971D26D053008BCE37 /* FBICode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBICode.swift; sourceTree = "<group>"; };
+		6A55DDA41D28A3C5008BCE37 /* DetailMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailMapViewController.swift; sourceTree = "<group>"; };
+		6A55DDA61D28A3D8008BCE37 /* FilterData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterData.swift; sourceTree = "<group>"; };
+		6A55DDA71D28A3D8008BCE37 /* FilterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
+		6A55DDA81D28A3D8008BCE37 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		6A55DDA91D28A3D8008BCE37 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		6A55DDAE1D2991B3008BCE37 /* initialSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = initialSettings.plist; sourceTree = "<group>"; };
+		6A84529B1D1B35B3006540EA /* CrimeDataInChicago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrimeDataInChicago.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A84529E1D1B35B3006540EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6A8452A11D1B35B3006540EA /* CrimeDataInChicago.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CrimeDataInChicago.xcdatamodel; sourceTree = "<group>"; };
+		6A8452A31D1B35B3006540EA /* MasterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
+		6A8452A51D1B35B3006540EA /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		6A8452A81D1B35B3006540EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6A8452AA1D1B35B3006540EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A8452AD1D1B35B3006540EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6A8452AF1D1B35B3006540EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6ABF53391D20855700D40F16 /* bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bridging-header.h"; sourceTree = "<group>"; };
+		6ABF533A1D2087CC00D40F16 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		6ABF533B1D2087CC00D40F16 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		6ABF533E1D20885D00D40F16 /* SQLiteDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDBManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A8452981D1B35B3006540EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ABF533C1D2087CC00D40F16 /* libsqlite3.0.tbd in Frameworks */,
+				6ABF533D1D2087CC00D40F16 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A8452921D1B35B3006540EA = {
+			isa = PBXGroup;
+			children = (
+				6ABF533A1D2087CC00D40F16 /* libsqlite3.0.tbd */,
+				6ABF533B1D2087CC00D40F16 /* libsqlite3.tbd */,
+				6A84529D1D1B35B3006540EA /* CrimeDataInChicago */,
+				6A84529C1D1B35B3006540EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A84529C1D1B35B3006540EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A84529B1D1B35B3006540EA /* CrimeDataInChicago.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A84529D1D1B35B3006540EA /* CrimeDataInChicago */ = {
+			isa = PBXGroup;
+			children = (
+				6A84529E1D1B35B3006540EA /* AppDelegate.swift */,
+				6A55DDA91D28A3D8008BCE37 /* TabBarViewController.swift */,
+				6A55DDA81D28A3D8008BCE37 /* FirstViewController.swift */,
+				6A8452A31D1B35B3006540EA /* MasterTableViewController.swift */,
+				6A8452A51D1B35B3006540EA /* DetailTableViewController.swift */,
+				6A55DDA41D28A3C5008BCE37 /* DetailMapViewController.swift */,
+				6A55DDA61D28A3D8008BCE37 /* FilterData.swift */,
+				6A55DDA71D28A3D8008BCE37 /* FilterTableViewCell.swift */,
+				6ABF533E1D20885D00D40F16 /* SQLiteDBManager.swift */,
+				6A8452A71D1B35B3006540EA /* Main.storyboard */,
+				6A8452AA1D1B35B3006540EA /* Assets.xcassets */,
+				6A8452AC1D1B35B3006540EA /* LaunchScreen.storyboard */,
+				6A8452AF1D1B35B3006540EA /* Info.plist */,
+				6ABF53391D20855700D40F16 /* bridging-header.h */,
+				6A8452A01D1B35B3006540EA /* CrimeDataInChicago.xcdatamodeld */,
+				6A55DD941D26D053008BCE37 /* CommArea+CoreDataProperties.swift */,
+				6A55DD951D26D053008BCE37 /* CommArea.swift */,
+				6A55DD901D26D053008BCE37 /* CommAreaGeo+CoreDataProperties.swift */,
+				6A55DD911D26D053008BCE37 /* CommAreaGeo.swift */,
+				6A55DD8C1D26D053008BCE37 /* Crime+CoreDataProperties.swift */,
+				6A55DD8D1D26D053008BCE37 /* Crime.swift */,
+				6A55DD8E1D26D053008BCE37 /* CrimeLoc+CoreDataProperties.swift */,
+				6A55DD8F1D26D053008BCE37 /* CrimeLoc.swift */,
+				6A55DD961D26D053008BCE37 /* FBICode+CoreDataProperties.swift */,
+				6A55DD971D26D053008BCE37 /* FBICode.swift */,
+				6A55DD921D26D053008BCE37 /* IUCR+CoreDataProperties.swift */,
+				6A55DD931D26D053008BCE37 /* IUCR.swift */,
+				6A55DDAE1D2991B3008BCE37 /* initialSettings.plist */,
+			);
+			path = CrimeDataInChicago;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A84529A1D1B35B3006540EA /* CrimeDataInChicago */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A8452B21D1B35B3006540EA /* Build configuration list for PBXNativeTarget "CrimeDataInChicago" */;
+			buildPhases = (
+				6A8452971D1B35B3006540EA /* Sources */,
+				6A8452981D1B35B3006540EA /* Frameworks */,
+				6A8452991D1B35B3006540EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrimeDataInChicago;
+			productName = CrimeDataInChicago;
+			productReference = 6A84529B1D1B35B3006540EA /* CrimeDataInChicago.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A8452931D1B35B3006540EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Illinois Institute of Technology";
+				TargetAttributes = {
+					6A84529A1D1B35B3006540EA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 6A8452961D1B35B3006540EA /* Build configuration list for PBXProject "CrimeDataInChicago" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A8452921D1B35B3006540EA;
+			productRefGroup = 6A84529C1D1B35B3006540EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A84529A1D1B35B3006540EA /* CrimeDataInChicago */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A8452991D1B35B3006540EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A8452AE1D1B35B3006540EA /* LaunchScreen.storyboard in Resources */,
+				6A8452AB1D1B35B3006540EA /* Assets.xcassets in Resources */,
+				6A55DDAF1D2991B3008BCE37 /* initialSettings.plist in Resources */,
+				6A8452A91D1B35B3006540EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A8452971D1B35B3006540EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A55DDA51D28A3C5008BCE37 /* DetailMapViewController.swift in Sources */,
+				6A8452A21D1B35B3006540EA /* CrimeDataInChicago.xcdatamodeld in Sources */,
+				6A55DDAD1D28A3D8008BCE37 /* TabBarViewController.swift in Sources */,
+				6A84529F1D1B35B3006540EA /* AppDelegate.swift in Sources */,
+				6ABF533F1D20885D00D40F16 /* SQLiteDBManager.swift in Sources */,
+				6A55DD9F1D26D053008BCE37 /* IUCR.swift in Sources */,
+				6A55DDA21D26D053008BCE37 /* FBICode+CoreDataProperties.swift in Sources */,
+				6A55DDAC1D28A3D8008BCE37 /* FirstViewController.swift in Sources */,
+				6A8452A41D1B35B3006540EA /* MasterTableViewController.swift in Sources */,
+				6A55DD981D26D053008BCE37 /* Crime+CoreDataProperties.swift in Sources */,
+				6A55DD9B1D26D053008BCE37 /* CrimeLoc.swift in Sources */,
+				6A55DDAB1D28A3D8008BCE37 /* FilterTableViewCell.swift in Sources */,
+				6A55DD991D26D053008BCE37 /* Crime.swift in Sources */,
+				6A55DDAA1D28A3D8008BCE37 /* FilterData.swift in Sources */,
+				6A55DDA11D26D053008BCE37 /* CommArea.swift in Sources */,
+				6A55DD9D1D26D053008BCE37 /* CommAreaGeo.swift in Sources */,
+				6A8452A61D1B35B3006540EA /* DetailTableViewController.swift in Sources */,
+				6A55DDA01D26D053008BCE37 /* CommArea+CoreDataProperties.swift in Sources */,
+				6A55DD9C1D26D053008BCE37 /* CommAreaGeo+CoreDataProperties.swift in Sources */,
+				6A55DD9E1D26D053008BCE37 /* IUCR+CoreDataProperties.swift in Sources */,
+				6A55DD9A1D26D053008BCE37 /* CrimeLoc+CoreDataProperties.swift in Sources */,
+				6A55DDA31D26D053008BCE37 /* FBICode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6A8452A71D1B35B3006540EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A8452A81D1B35B3006540EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6A8452AC1D1B35B3006540EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A8452AD1D1B35B3006540EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A8452B01D1B35B3006540EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6A8452B11D1B35B3006540EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A8452B31D1B35B3006540EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CrimeDataInChicago/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.iit.cs.xsu11.CrimeDataInChicago;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CrimeDataInChicago/bridging-header.h";
+			};
+			name = Debug;
+		};
+		6A8452B41D1B35B3006540EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CrimeDataInChicago/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.iit.cs.xsu11.CrimeDataInChicago;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CrimeDataInChicago/bridging-header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A8452961D1B35B3006540EA /* Build configuration list for PBXProject "CrimeDataInChicago" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A8452B01D1B35B3006540EA /* Debug */,
+				6A8452B11D1B35B3006540EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A8452B21D1B35B3006540EA /* Build configuration list for PBXNativeTarget "CrimeDataInChicago" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A8452B31D1B35B3006540EA /* Debug */,
+				6A8452B41D1B35B3006540EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6A8452A01D1B35B3006540EA /* CrimeDataInChicago.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6A8452A11D1B35B3006540EA /* CrimeDataInChicago.xcdatamodel */,
+			);
+			currentVersion = 6A8452A11D1B35B3006540EA /* CrimeDataInChicago.xcdatamodel */;
+			path = CrimeDataInChicago.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6A8452931D1B35B3006540EA /* Project object */;
+}

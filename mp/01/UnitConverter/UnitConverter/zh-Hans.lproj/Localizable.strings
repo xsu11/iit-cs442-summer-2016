@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  UnitConverter
+
+  Created by xinsu on 6/13/16.
+  Copyright © 2016 Illinois Institute of Technology. All rights reserved.
+*/
+
+"Temperature" = "温度";
+"Distance" = "距离";
+"Volume" = "体积";
+"Convert" = "转换";
+"℃" = "℃";
+"℉" = "℉";
+"Miles" = "英里";
+"Kilometers" = "公里";
+"Gallons" = "加仑";
+"Liters" = "升";

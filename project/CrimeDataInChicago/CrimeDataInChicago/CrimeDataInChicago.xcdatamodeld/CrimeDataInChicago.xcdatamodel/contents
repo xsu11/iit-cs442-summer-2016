@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Automatic">
+    <entity name="CommArea" representedClassName=".CommArea" syncable="YES">
+        <attribute name="area" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="area_num" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="area_num_1" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="comarea" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="comarea_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="community" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="perimeter" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="shape_area" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="shape_len" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="comm_area_geo_info" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CommAreaGeo" inverseName="comm_area_info" inverseEntity="CommAreaGeo" syncable="YES"/>
+        <relationship name="crime_info" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Crime" inverseName="comm_area_info" inverseEntity="Crime" syncable="YES"/>
+    </entity>
+    <entity name="CommAreaGeo" representedClassName=".CommAreaGeo" syncable="YES">
+        <attribute name="area_num" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="sequence" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="comm_area_info" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CommArea" inverseName="comm_area_geo_info" inverseEntity="CommArea" syncable="YES"/>
+    </entity>
+    <entity name="Crime" representedClassName=".Crime" syncable="YES">
+        <attribute name="arrest" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="block" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="case_number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="community_area" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="domestic" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="fbi_code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="iucr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="location_description" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="comm_area_info" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CommArea" inverseName="crime_info" inverseEntity="CommArea" syncable="YES"/>
+        <relationship name="crime_loc_info" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CrimeLoc" inverseName="crime_info" inverseEntity="CrimeLoc" syncable="YES"/>
+        <relationship name="fbi_code_info" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FBICode" inverseName="crime_info" inverseEntity="FBICode" syncable="YES"/>
+        <relationship name="iucr_info" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IUCR" inverseName="crime_info" inverseEntity="IUCR" syncable="YES"/>
+    </entity>
+    <entity name="CrimeLoc" representedClassName=".CrimeLoc" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="x_coordinate" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="y_coordinate" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="crime_info" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Crime" inverseName="crime_loc_info" inverseEntity="Crime" syncable="YES"/>
+    </entity>
+    <entity name="FBICode" representedClassName=".FBICode" syncable="YES">
+        <attribute name="fbi_code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="offense" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="relate" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="crime_info" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Crime" inverseName="fbi_code_info" inverseEntity="Crime" syncable="YES"/>
+    </entity>
+    <entity name="IUCR" representedClassName=".IUCR" syncable="YES">
+        <attribute name="index_code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iucr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="primary_description" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="secondary_description" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="crime_info" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Crime" inverseName="iucr_info" inverseEntity="Crime" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CommArea" positionX="-6201" positionY="8244" width="128" height="208"/>
+        <element name="Crime" positionX="-5949" positionY="8262" width="128" height="253"/>
+        <element name="CrimeLoc" positionX="-6203" positionY="8469" width="128" height="133"/>
+        <element name="FBICode" positionX="-5717" positionY="8537" width="128" height="103"/>
+        <element name="IUCR" positionX="-5717" positionY="8343" width="128" height="118"/>
+        <element name="CommAreaGeo" positionX="-6390" positionY="8271" width="128" height="118"/>
+    </elements>
+</model>

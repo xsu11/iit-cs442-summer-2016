@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Simon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJN-Oz-abc">
+                                <rect key="frame" x="0.0" y="28" width="140" height="140"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="Kcy-Wq-INQ"/>
+                                    <constraint firstAttribute="width" constant="140" id="SvO-9m-5Zf"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aIm-Zq-fHg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQ7-mv-au6">
+                                <rect key="frame" x="460" y="28" width="140" height="140"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="USm-9p-XxG"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qVi-Ij-ycE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szL-Gg-obo">
+                                <rect key="frame" x="0.0" y="460" width="140" height="140"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="iOa-MS-N1J"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="shi-OU-hfC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRZ-gq-o4R">
+                                <rect key="frame" x="460" y="460" width="140" height="140"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P5X-Wp-bwQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double tap to start!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQj-lI-Bad">
+                                <rect key="frame" x="226" y="212" width="149" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="3" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Afb-4P-Zmi">
+                                <rect key="frame" x="241" y="246" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="n16-ZS-Gcz"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="nyi-GJ-nN3"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yv6-HI-5wr">
+                                <rect key="frame" x="279" y="287" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="fRZ-gq-o4R" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="1fD-l8-4Xm"/>
+                            <constraint firstItem="lQ7-mv-au6" firstAttribute="leading" secondItem="fRZ-gq-o4R" secondAttribute="leading" id="3KE-2i-Vvd"/>
+                            <constraint firstItem="Afb-4P-Zmi" firstAttribute="top" secondItem="NQj-lI-Bad" secondAttribute="bottom" constant="13" id="45J-Ae-8bC"/>
+                            <constraint firstItem="Afb-4P-Zmi" firstAttribute="centerX" secondItem="yv6-HI-5wr" secondAttribute="centerX" id="6mD-9l-2Qe"/>
+                            <constraint firstItem="YJN-Oz-abc" firstAttribute="bottom" secondItem="lQ7-mv-au6" secondAttribute="bottom" id="Ebd-nZ-NIf"/>
+                            <constraint firstItem="YJN-Oz-abc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="JfZ-fC-wb3"/>
+                            <constraint firstItem="NQj-lI-Bad" firstAttribute="centerX" secondItem="Afb-4P-Zmi" secondAttribute="centerX" id="LIa-Q0-vno"/>
+                            <constraint firstItem="fRZ-gq-o4R" firstAttribute="baseline" secondItem="szL-Gg-obo" secondAttribute="baseline" id="PNJ-hZ-JlA"/>
+                            <constraint firstItem="NQj-lI-Bad" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="192" id="UDh-Ou-H0v"/>
+                            <constraint firstAttribute="trailing" secondItem="lQ7-mv-au6" secondAttribute="trailing" id="V6e-2I-W9w"/>
+                            <constraint firstItem="YJN-Oz-abc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XDz-md-LeN"/>
+                            <constraint firstItem="YJN-Oz-abc" firstAttribute="baseline" secondItem="lQ7-mv-au6" secondAttribute="baseline" id="XKD-2q-dFl"/>
+                            <constraint firstItem="NQj-lI-Bad" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YKS-ke-A3y"/>
+                            <constraint firstItem="YJN-Oz-abc" firstAttribute="trailing" secondItem="szL-Gg-obo" secondAttribute="trailing" id="YVT-y4-xDp"/>
+                            <constraint firstItem="lQ7-mv-au6" firstAttribute="firstBaseline" secondItem="YJN-Oz-abc" secondAttribute="firstBaseline" id="ZP5-y9-hDO"/>
+                            <constraint firstItem="YJN-Oz-abc" firstAttribute="top" secondItem="lQ7-mv-au6" secondAttribute="top" id="ZWi-gE-Xup"/>
+                            <constraint firstItem="YJN-Oz-abc" firstAttribute="leading" secondItem="szL-Gg-obo" secondAttribute="leading" id="eXV-EH-joP"/>
+                            <constraint firstItem="fRZ-gq-o4R" firstAttribute="firstBaseline" secondItem="szL-Gg-obo" secondAttribute="firstBaseline" id="fju-vt-ZiL"/>
+                            <constraint firstItem="yv6-HI-5wr" firstAttribute="top" secondItem="Afb-4P-Zmi" secondAttribute="bottom" constant="11" id="hcw-Gf-5ho"/>
+                            <constraint firstItem="szL-Gg-obo" firstAttribute="top" secondItem="fRZ-gq-o4R" secondAttribute="top" id="mhU-5C-6PL"/>
+                            <constraint firstItem="lQ7-mv-au6" firstAttribute="trailing" secondItem="fRZ-gq-o4R" secondAttribute="trailing" id="qcK-FT-HXx"/>
+                            <constraint firstItem="szL-Gg-obo" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="tRn-4t-EzH"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="uyh-GD-9ak" appends="YES" id="sOH-7W-Tln"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="yv6-HI-5wr" id="SJW-Qi-u2C"/>
+                        <outlet property="messageLabel" destination="NQj-lI-Bad" id="Gin-cp-IVZ"/>
+                        <outlet property="slider" destination="Afb-4P-Zmi" id="hRM-L4-TnZ"/>
+                        <outletCollection property="buttons" destination="YJN-Oz-abc" collectionClass="NSMutableArray" id="uUB-Ko-yZy"/>
+                        <outletCollection property="buttons" destination="lQ7-mv-au6" collectionClass="NSMutableArray" id="FCX-OC-Zww"/>
+                        <outletCollection property="buttons" destination="szL-Gg-obo" collectionClass="NSMutableArray" id="xpB-4e-K1g"/>
+                        <outletCollection property="buttons" destination="fRZ-gq-o4R" collectionClass="NSMutableArray" id="yCO-hY-obc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="uyh-GD-9ak">
+                    <connections>
+                        <action selector="startGame:" destination="BYZ-38-t0r" id="RM0-fL-c8a"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="400" y="278"/>
+        </scene>
+    </scenes>
+</document>

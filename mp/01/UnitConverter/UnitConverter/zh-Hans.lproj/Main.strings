@@ -1,0 +1,21 @@
+
+/* Class = "UIButton"; normalTitle = "⬇︎"; ObjectID = "gcp-Yx-JKG"; */
+"gcp-Yx-JKG.normalTitle" = "⬇︎";
+
+/* Class = "UIButton"; normalTitle = "Convert"; ObjectID = "i5l-6D-3cb"; */
+"i5l-6D-3cb.normalTitle" = "Convert";
+
+/* Class = "UILabel"; text = "℉"; ObjectID = "kBN-TZ-dbA"; */
+"kBN-TZ-dbA.text" = "℉";
+
+/* Class = "UILabel"; text = "℃"; ObjectID = "nGK-5v-xqO"; */
+"nGK-5v-xqO.text" = "℃";
+
+/* Class = "UISegmentedControl"; nyC-7G-k7R.segmentTitles[0] = "Temperature"; ObjectID = "nyC-7G-k7R"; */
+"nyC-7G-k7R.segmentTitles[0]" = "Temperature";
+
+/* Class = "UISegmentedControl"; nyC-7G-k7R.segmentTitles[1] = "Distance"; ObjectID = "nyC-7G-k7R"; */
+"nyC-7G-k7R.segmentTitles[1]" = "Distance";
+
+/* Class = "UISegmentedControl"; nyC-7G-k7R.segmentTitles[2] = "Volume"; ObjectID = "nyC-7G-k7R"; */
+"nyC-7G-k7R.segmentTitles[2]" = "Volume";
